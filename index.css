@@ -342,3 +342,199 @@ button:hover{
 }
 
 .Portfolio *{ margin-top: 0;}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    
+    #profile {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        background-position: center;
+    }
+
+    #profile nav,
+    .top-nav {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .top-nav h4 {
+        font-size: 16px;
+        max-width: 150px;
+    }
+
+    .btn {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .btn button,
+    .port,
+    .hire {
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    
+    .facts {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .sub {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    
+    .Portfolio {
+        padding: 20px 10px;
+    }
+
+    
+    .featured-row {
+        flex-direction: column; /* stack */
+        width: 100%;
+    }
+
+    .featured-row .image-side {
+        width: 100%;
+        height: 250px;
+        position: relative;
+    }
+
+    .featured-row .image-side img {
+        height: 100%;
+    }
+
+    
+    .featured-row .image-side .mobile-text-overlay {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.45);
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .featured-row .text-side {
+        width: 100%;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .featured-row h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    
+    .images {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .images img:nth-child(3) {
+        grid-column: span 1; /* fix stretch on mobile */
+    }
+
+    
+    .other {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .other-sub {
+        margin: 0;
+    }
+
+    
+    .exclusive .icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .exclusive .icons img {
+        margin: 10px;
+        width: 55px;
+        height: 55px;
+    }
+
+    /* QUOTE SECTION */
+    .quote {
+        height: 400px;
+        padding: 20px;
+        background-position: center;
+        text-align: center;
+    }
+
+    .fa-quote-left {
+        font-size: 90px;
+        margin-top: 40px;
+    }
+
+    /* CONTACT FORM */
+    #form input,
+    form #message {
+        width: 95%;
+        margin: 15px auto;
+        height: 55px;
+    }
+
+    form #message {
+        height: 160px;
+    }
+
+    .submit {
+        width: 90%;
+        height: 55px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .name {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .name h3 {
+        font-size: 16px;
+    }
+
+    footer div:first-child {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
