@@ -354,6 +354,7 @@ button:hover{
         overflow-x: hidden;
         margin: 0;
         justify-content: center;
+        background-color: white;
     }
 
     
@@ -411,11 +412,12 @@ button:hover{
     }
     
     .facts {
-        flex-direction: ;
+        
         align-items: center;
-        gap: 20px;
+        gap: 5px;
         text-align: center;
         font-size: 6px;
+        margin: 0 4px;
     }
 
     .sub {
@@ -426,18 +428,24 @@ button:hover{
     
     .Portfolio {
         padding: 20px 10px;
+        gap: 40px;
     }
 
     
     .featured-row {
         flex-direction: column; /* stack */
         width: 100%;
+        position: relative;
+        overflow: hidden;
     }
+
 
     .featured-row .image-side {
         width: 100%;
         height: 250px;
-        position: relative;
+        height: 100%;
+       display: block;
+       object-fit: cover;
     }
 
     .featured-row .image-side img {
@@ -463,40 +471,108 @@ button:hover{
         width: 100%;
         padding: 20px;
         font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 80%;
+        background: (0, 0, 0, 0.5);
+        font-size: 9px;
     }
+    
 
     .featured-row h2 {
-        font-size: 18px;
+        font-size: 10px;
         margin-bottom: 10px;
     }
 
+    .featured-row .details{
+        font-size: 6px;
+        padding: 0px;
+    }
+    .featured-row button{
+        margin-top: 20px;
+        width: 45%;
+        height: 16px;
+        font-size: 8px;
+        justify-items: center;
+    }
     
     .images {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-rows: auto;
+        flex: 1;
         width: 100%;
-        gap: 5px;
-        height: 10px;
+        max-width: 100%;
+        height: 100%;
     }
-
+    .grid-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
     .images img:nth-child(3) {
-        grid-column: span 1; /* fix stretch on mobile */
+        grid-column: 1/ span 2; 
     }
 
     
     .other {
         flex-direction: column;
         text-align: center;
-        padding: 10px;
+        padding: 0px;
+        position: relative; 
+        width: 100%;
+        height: 250px; 
+        overflow: hidden;
+        color: white;
+    }
+    .other h2{
+         font-size: 10px;
+        margin-bottom: 10px;
+        direction: ltr;
     }
 
     .other-sub {
         margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
     }
 
+    .other button {
+        background-color: #008060; 
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 8px;
+        width: 50%;
+        height: 16px;
+        justify-items: center
+        }
+        
     hr{
         justify-self: center;
     }
     
+    .exclusive h2{
+        font-size: 20px;
+    }
     .exclusive .icons {
         display: flex;
         flex-wrap: wrap;
@@ -538,43 +614,58 @@ button:hover{
     #form input,
     form #message {
         width: 95%;
-        margin: 15px auto;
-        height: 55px;
+        margin: 15px 5px;
+        height: 35px;
+        background-color: #EAE8E9;
+        font-size: 10px;
+        
     }
-
+    form ::placeholder{
+        padding-left: 10px;
+    }
     form #message {
-        height: 160px;
+        height: 150px;
     }
+    
 
     .submit {
-        width: 90%;
-        height: 55px;
+        width: 40%;
+        height: 25px;
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 9px;
     }
 
     .line {
         width: 90%;
     }
-
+    
     
     footer {
         margin-top: 40px;
         padding-bottom: 40px;
         text-align: center;
+        font-size: 8px;
+    
     }
 
     .name {
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        gap: 7px;
+        display: flex;
     }
 
-    .name h3 {
-        font-size: 16px;
+    .name h3
+    {
+        font-size: 10px;
     }
-
+   
+    .name p{
+        margin-top: 4px;
+    }
     footer div:first-child {
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 10px;
     }
 }
+
