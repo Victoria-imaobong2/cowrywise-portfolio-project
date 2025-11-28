@@ -211,13 +211,10 @@ h2{
     border: 3px solid #319873;
     margin-bottom: 15px;
 }
-.exclusive .icons{
-    gap: 10px;
-}
 .exclusive .icons img{
     height: 70px;
     width: 70px;
-   margin: 30px 40px;
+   margin: 30px 70px;
    
 }
 .exclusive .icons img:hover{
@@ -227,18 +224,15 @@ h2{
 .quote{
     background-image: url(assets/camera.png);
     background-size: cover;
-    background-position: center;
     width: 100%;
-    height: 500px;
+    height: 700px;
     color: white;
     justify-items: center;
 }
 
 .fa-quote-left{
-    font-size: 60px;
+    font-size: 140px;
     background-image: url(assets/green\ ellipse.png);
-    height: 90px;
-    width: 90px;
     margin-top: 100px;
 
 }
@@ -344,26 +338,18 @@ button:hover{
 
 @media screen and (max-width: 600px) {
 
-    * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-    }
     body {
-        font-size: 8px;
+        font-size: 14px;
         overflow-x: hidden;
-        margin: 0;
-        justify-content: center;
     }
 
     
     #profile {
-        height: 300px;
-        ;
+        height: auto;
+        padding: 20px;
         text-align: center;
         background-position: center;
         background-size: cover;
-        
     }
 
     #profile nav,
@@ -374,48 +360,31 @@ button:hover{
         font-size: 12px;
     }
 
-    .top-nav p{
-        justify-content: center;
-    }
-   
     .top-nav h4 {
         font-size: 16px;
         max-width: 150px;
     }
 
-    .logo i{
-        flex-direction: column;
-        gap: 5px;
-
-    }
-
     .btn {
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-        gap: 7px;
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
     }
 
     .btn button,
     .port,
     .hire {
-        width: 30%;
-        height: 25px;
-        font-size: 6px;
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
     }
 
-    .profile img{
-        width: 50px;
-        height: 50px;
-    }
     
     .facts {
-        flex-direction: ;
+        flex-direction: column;
         align-items: center;
         gap: 20px;
         text-align: center;
-        font-size: 6px;
     }
 
     .sub {
@@ -475,7 +444,6 @@ button:hover{
         grid-template-columns: 1fr;
         width: 100%;
         gap: 5px;
-        height: 10px;
     }
 
     .images img:nth-child(3) {
@@ -493,27 +461,23 @@ button:hover{
         margin: 0;
     }
 
-    hr{
-        justify-self: center;
-    }
     
     .exclusive .icons {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-        margin: 0 20px 10px 20px;
+        gap: 20px;
     }
 
     .exclusive .icons img {
         margin: 10px;
-        width: 25px;
-        height: 25px;
+        width: 55px;
+        height: 55px;
     }
 
-    
+    /* QUOTE SECTION */
     .quote {
-        height: 170px;
+        height: 400px;
         padding: 20px;
         background-position: center;
         text-align: center;
@@ -523,18 +487,8 @@ button:hover{
         font-size: 90px;
         margin-top: 40px;
     }
-    .quote h3{
-        align-content: center;
-        justify-content: center;
-    }
-    .fa-quote-left{
-        background-image: url(assets/green\ ellipse.png);
-        background-size: cover;
-        height: 35px;
-        width: 35px;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+
+    /* CONTACT FORM */
     #form input,
     form #message {
         width: 95%;
@@ -557,7 +511,7 @@ button:hover{
         width: 90%;
     }
 
-    
+    /* FOOTER */
     footer {
         margin-top: 40px;
         padding-bottom: 40px;
